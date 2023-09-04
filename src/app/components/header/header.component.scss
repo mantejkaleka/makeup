@@ -1,0 +1,56 @@
+@import '../../../assets/styles/colors';
+@import '../../../assets/styles/fonts';
+@import '../../../assets/styles/buttons';
+@import '../../../assets/styles/links';
+
+.navbar {
+    width: 100vw;
+    background-color: $churchCrab !important;
+    padding: 0 !important;
+
+    .shish-kebab {
+        width: 80vw;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        .navbar-brand {
+            width: 56px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            margin-top: -5px;
+
+            img {
+                width: 100px;
+            }
+        }
+
+        .nav-links {
+            justify-content: center;
+            align-items: center;
+          
+            a {
+                font-size: 16px;
+                font-family: $classy;
+                margin: 10px;
+                border-bottom: 1px solid transparent;
+            }
+            a:hover {
+                border-bottom: 1px solid $tepidAngst;
+              }
+          
+              a.active {
+                border-bottom: 1px solid $faceBusiness;
+              }
+        }
+
+        .book-now {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 40px;
+        }
+    }
+}

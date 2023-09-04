@@ -1,0 +1,29 @@
+@import '../../../assets/styles/colors';
+@import '../../../assets/styles/fonts';
+@import '../../../assets/styles/buttons';
+@import '../../../assets/styles/links';
+
+.aboutMePage {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .about-main-page-container {
+        width: 70vw;
+        margin: 0 auto 20px;
+        display: flex;
+        justify-content: center;
+
+        .about {
+            width: 55%;
+            margin: 2%;
+
+            p {
+                text-align: center;
+            }
+
+        }
+    }
+
+}

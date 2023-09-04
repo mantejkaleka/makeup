@@ -1,0 +1,84 @@
+<div class="portfolioPage">
+    <h1>PORTFOLIO</h1>
+    <section class="portfolio-container">
+        <div class="button-container">
+            <section class="filter-buttons">
+                <button class="btn" [ngClass]=" isBeauty ? 'active' : 'inactive'"
+                    (click)="fetchSection('BEAUTY')">BEAUTY</button>
+                <button class="btn" [ngClass]="isEditorial ? 'active' : 'inactive'"
+                    (click)="fetchSection('EDITORIAL')">EDITORIAL</button>
+                <button class="btn" [ngClass]="isBridal? 'active' : 'inactive'"
+                    (click)="fetchSection('BRIDAL')">BRIDAL</button>
+            </section>
+        </div>
+
+
+
+        <div class="image-grid" *ngIf="isBeauty">
+            <div class="image-row">
+                <div class="image01"></div>
+                <div class="image02"></div>
+                <div class="image03"></div>
+            </div>
+            <div class="image-row">
+                <div class="image04"></div>
+                <div class="image05"></div>
+            </div>
+            <div class="image-row">
+                <div class="image06"></div>
+                <div class="image07"></div>
+                <div class="image08"></div>
+                <div class="image09"></div>
+            </div>
+            <div class="image-row">
+                <div class="image10"></div>
+                <div class="image11"></div>
+                <div class="image12"></div>
+            </div>
+
+        </div>
+        <div class="image-grid" *ngIf="isEditorial">
+
+            <div class="image-row">
+                <div class="image06"></div>
+                <div class="image07"></div>
+                <div class="image08"></div>
+                <div class="image09"></div>
+            </div>
+            <div class="image-row">
+                <div class="image10"></div>
+                <div class="image11"></div>
+                <div class="image12"></div>
+            </div>
+            <div class="image-row">
+                <div class="image13"></div>
+                <div class="image14"></div>
+                <div class="image15"></div>
+            </div>
+
+        </div>
+        <div class="image-grid" *ngIf="isBridal">
+
+            <div class="image-row">
+                <div class="image10"></div>
+                <div class="image11"></div>
+                <div class="image12"></div>
+            </div>
+            <div class="image-row">
+                <div class="image13"></div>
+                <div class="image14"></div>
+                <div class="image15"></div>
+            </div>
+            <div class="image-row">
+                <div class="image16"></div>
+                <div class="image17"></div>
+                <div class="image18"></div>
+            </div>
+            <div class="image-row">
+                <div class="image19"></div>
+                <div class="image20"></div>
+                <div class="image21"></div>
+            </div>
+        </div>
+    </section>
+</div>

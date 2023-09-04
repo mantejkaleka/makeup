@@ -1,0 +1,145 @@
+@import '../../../assets/styles/colors';
+@import '../../../assets/styles/fonts';
+@import '../../../assets/styles/buttons';
+@import '../../../assets/styles/links';
+
+.portfolioPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .portfolio-container{
+        margin-bottom: 40px;
+
+        .button-container {
+            margin: 40px auto;
+            .inactive {
+                background-color: $tepidAngst;
+              }
+            button {
+                margin: 4px;
+                
+            }
+        }
+        .masonry-on {
+            position: relative;
+            width: 910px;
+
+            img {
+                width: 300px;
+            }
+        }
+        
+    }
+}
+
+.portfolio-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+}
+
+.image-grid   {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    width: 100%;
+    div {
+        cursor: pointer;
+    }
+    
+.image01 {
+    background-image: url('https://makeup-by-ellie.s3.amazonaws.com/2c84009168a588dc2-1597138469948');
+    flex: 1;
+  }
+  .image02 {
+    background-image: url('https://makeup-by-ellie.s3.amazonaws.com/d048a5de13b9af815-1597138469951');
+    flex: 1;
+  }
+  .image03 {
+    background-image: url('https://makeup-by-ellie.s3.amazonaws.com/6c20621493ff86470-1646037558452');
+    flex: 2;
+  }
+  .image04 {
+    background-image: url('https://makeup-by-ellie.s3.amazonaws.com/e6c00d09f454d15e0-1646037625845');
+    flex: 1;
+  }
+  .image05 { 
+    background-image: url('https://makeup-by-ellie.s3.amazonaws.com/dc548a8678d44d470-1646037646282');
+    flex: 2;
+  }
+  .image06 { 
+    background-image: url('https://makeup-by-ellie.s3.amazonaws.com/93776d9e130303cd0-1646038168631');
+    flex: 2;
+  }
+  .image07 { 
+    background-image: url('https://makeup-by-ellie.s3.amazonaws.com/2c84009168a588dc2-1597138469948');
+    flex: 1;
+  }
+  .image08 { 
+    background-image: url('https://makeup-by-ellie.s3.amazonaws.com/d048a5de13b9af815-1597138469951');
+    flex: 3;
+  }
+  .image09 { 
+    background-image: url('https://makeup-by-ellie.s3.amazonaws.com/6c20621493ff86470-1646037558452');
+    flex: 1;
+  }
+  .image10 { 
+    background-image: url('https://makeup-by-ellie.s3.amazonaws.com/e6c00d09f454d15e0-1646037625845');
+  }
+  .image11 { 
+    background-image: url('https://makeup-by-ellie.s3.amazonaws.com/dc548a8678d44d470-1646037646282');
+  }
+  .image12 { 
+    background-image: url('https://makeup-by-ellie.s3.amazonaws.com/93776d9e130303cd0-1646038168631');
+  }
+  .image13 { 
+    background-image: url('https://makeup-by-ellie.s3.amazonaws.com/4401847d07e364260-1596573194741');
+  }
+  .image14 { 
+    background-image: url('https://makeup-by-ellie.s3.amazonaws.com/e42e518de6db67e1-1596573194742');
+  }
+  .image15 { 
+    background-image: url('https://makeup-by-ellie.s3.amazonaws.com/b37ebc6a9b1c9e952-1596573194742');
+  }
+  .image16 { 
+    background-image: url('https://makeup-by-ellie.s3.amazonaws.com/4e1a3912cf7284703-1596573194742');
+  }
+  .image17 { 
+    background-image: url('https://makeup-by-ellie.s3.amazonaws.com/d6a71883a981ecf24-1596573194742');
+  }
+  .image18 { 
+    background-image: url('https://makeup-by-ellie.s3.amazonaws.com/b7d89e126c702455-1596573194743');
+  }
+  .image19 { 
+    background-image: url('https://makeup-by-ellie.s3.amazonaws.com/876b343003fd47-1596573194743');
+  }
+  .image20 { 
+    background-image: url('https://makeup-by-ellie.s3.amazonaws.com/4bb031f6378d9b3d10-1596573194744');
+  }
+  .image21 { 
+    background-image: url('https://makeup-by-ellie.s3.amazonaws.com/5d1a06483b99ad811-1596573194744');
+  }
+  .image10, .image11, .image12, .image15, .image18, .image20, .image21  { flex: 1; }
+ .image13, .image14, .image16, .image17  { flex: 2; }
+  
+  .image-row {
+    display: flex;
+  }
+  
+  .image-row div {
+    margin: 4px;
+    height: 240px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  @media screen and (max-width: 400px) {
+    .image-row { flex-direction: column; }
+  }
+}
+

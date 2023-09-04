@@ -1,0 +1,141 @@
+@import '../../../assets/styles/colors';
+@import '../../../assets/styles/fonts';
+@import '../../../assets/styles/buttons';
+@import '../../../assets/styles/links';
+
+.contactPage {
+    align-items: center;
+
+    .form-img-info-container {
+        width: 80vw;
+        margin: 0 auto 20px;
+        display: flex;
+        justify-content: center;
+
+        .contactForm {
+            width: 50%;
+            margin: 2%;
+
+            .text-field {
+                margin: 10px 0;
+                display: flex;
+                flex-direction: column;
+                font-family: $classy;
+
+                input {
+                    width: 100%;
+                    height: 1.8em;
+                    padding-left: 1%;
+                    border: none;
+                    border-bottom: 1px solid #92898a;
+                    margin: 5px 0;
+                    font-size: 16px;
+                    font-family: $classy;
+                    font-weight: lighter;
+                }
+
+                input:focus {
+                    outline: none;
+                }
+            }
+
+            .btn-container {
+                display: flex;
+                justify-content: flex-end;
+                .reset-btn {
+                    margin-right: 10px;
+                    border: 1px solid #222;
+                    background-color: transparent;
+                    color: #222;
+                }
+
+                .btn-req-animated {
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+
+                    .btn:disabled {
+                        background-color: $dyingUrchin;
+                    }
+                }
+             
+            }
+
+            .fieldLabel {
+                padding-left: 1%;
+                display: flex;
+                font-weight: bolder;
+            }
+
+            .dropdown-list-field {
+                margin: 10px 0;
+                display: flex;
+                flex-direction: column;
+                font-family: $classy;
+
+                .form-select {
+                    border: none;
+                    font-family: inherit;
+                    position: relative;
+                    border-radius: 0;
+                    border: bottom;
+                    border-bottom: 1px solid $tepidAngst;
+                    margin-top: 1px;
+                    box-shadow: none;
+                    overflow: hidden;
+                    height: 2.429em;
+                    background-color: inherit;
+                    padding-left: 1% !important;
+                    cursor: pointer;
+                }
+            }
+
+            .text-area-field {
+                margin: 10px 0;
+                display: flex;
+                flex-direction: column;
+                font-family: $classy;
+
+                textarea {
+                    margin-left: 1%;
+                    padding-top: 1%;
+                    border: 1px solid $tepidAngst;
+                    margin: 5px 0;
+                    font-size: 16px;
+                    font-family: $classy;
+                    resize: none;
+                }
+            }
+
+            .editorial-contact-instruction {
+                margin: 0 0 20px;
+
+                p {
+                    padding-left: 1%;
+                    font-family: $classy;
+                    font-size: 16px;
+                }
+            }
+
+        }
+
+        .img-info-container {
+            align-items: center;
+            width: 50%;
+            margin: 2%;
+
+            img {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+        }
+    }
+}
+
+.contactPage,
+.contactForm,
+.img-info-container {
+    display: flex;
+    flex-direction: column;
+}

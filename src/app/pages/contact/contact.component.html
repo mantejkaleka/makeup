@@ -1,0 +1,76 @@
+<div class="contactPage">
+    <h1>CONTACT</h1>
+    <div class="form-img-info-container">
+      <form class="contactForm" [formGroup]="form" (ngSubmit)="submitForm()">
+          <div class="text-field">
+            <label for="" class="fieldLabel" >Name</label>
+          <input type="text" formControlName="name">
+          <div *ngIf="form.get('name')?.touched && form.get('name')?.errors?.['required']">
+            Name is required.
+          </div>
+          </div>
+          <div class="text-field">
+            <label for="" class="fieldLabel" >Email</label>
+          <input type="text" formControlName="email">
+          </div>
+          <div class="text-field">
+            <label for="" class="fieldLabel" >Mobile</label>
+          <input type="text" formControlName="mobile">
+          </div>
+          <div class="text-field" >
+            <label for="" class="fieldLabel" placeholder="dd-mm-yyyy">Date Of Event/wedding: </label>
+          <input type="date" formControlName="date">
+          </div>
+          <div class="dropdown-list-field " >
+            <label for="" class="fieldLabel">Services you are booking for:</label>
+            <select class="form-select" formControlName="services" aria-label="Default select example">
+              <option selected>Event</option>
+              <option value="1">Bridal</option>
+            </select>
+          </div>
+          <p><em>Please note: travel is only available for 4  or more makeup services, all other bookings will take place at my home studio in Altona Meadows, Melbourne.</em></p>
+          <div class="text-field" >
+            <label for="" class="fieldLabel">Number of people for makeup</label>
+          <input type="number" formControlName="numberOfPeople">
+          </div> 
+          <div class="text-field" >
+            <label for="" class="fieldLabel">Number of people for hair</label>
+          <input type="number" formControlName="numberOfPeopleForHair">
+          </div>
+          <div class="text-field">
+            <label for="" class="fieldLabel">Time you need to be ready</label>
+          <input type="text" formControlName="time">
+          </div> 
+          <div class="text-field">
+            <label for="" class="fieldLabel">Location for Service:</label>
+          <input type="text" formControlName="location">
+          </div> 
+          <div class="dropdown-list-field ">
+            <label for="" class="fieldLabel">How did you hear about me?</label>
+            <select class="form-select" formControlName="information" aria-label="Default select example">
+              <option selected>Instagram</option>
+              <option value="1">Friend</option>
+              <option value="1">Other</option>
+            </select>
+          </div> 
+          <div class="text-area-field">
+            <label for="" class="fieldLabel">Any Additional Information:</label>
+            <textarea type="text" name="addQuestionsOrInfo" cols="50" rows="10" formControlName="question"></textarea>
+          </div>
+          <p class="editorial-contact-instruction">
+           <em>For shoots or editorial work please email info@makeupbyellie.com</em> 
+          </p>  
+          <div class="btn-container">
+            <button class="reset-btn btn">Clear</button>
+            <div class="btn-req-animated">
+              <button type="submit"class="btn">Send</button>
+            </div>
+          </div>
+      </form>
+       
+        <div class="img-info-container">
+           <img src="https://makeupbyellie.netlify.app/static/media/contact-page.64434f24.jpeg" alt="">
+        </div>
+
+    </div>
+</div>
